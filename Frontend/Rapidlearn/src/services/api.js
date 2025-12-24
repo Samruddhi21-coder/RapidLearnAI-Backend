@@ -4,7 +4,7 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
-  timeout: 30000,
+  timeout: 120000,
 });
 
 // Warn early if API base URL is missing to surface misconfig quickly
