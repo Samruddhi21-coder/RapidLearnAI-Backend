@@ -1,0 +1,74 @@
+# ======================
+# Node
+# ======================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# ======================
+# Logs & runtime
+# ======================
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ======================
+# Build outputs
+# ======================
+dist/
+build/
+out/
+.vite/
+Frontend/AiLafda/dist/
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+.env.local
+
+# ======================
+# Firebase / Secrets
+# ======================
+.firebase/
+.firebaserc
+firebase-debug.*.log
+Backend/src/config/*.json
+secrets.json
+*.json
+
+# ======================
+# Coverage
+# ======================
+coverage/
+coverage-final.json
+*.lcov
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# IDEs & editors
+# ======================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ======================
+# Temp / backup files
+# ======================
+*.swp
+*.tmp
+*.bak
+*.old
