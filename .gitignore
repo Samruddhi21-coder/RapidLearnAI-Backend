@@ -1,63 +1,47 @@
-# ======================
 # Node
-# ======================
 node_modules/
 npm-debug.log*
-yarn-error.log*
+yarn-error.log
 pnpm-lock.yaml
 
-# ======================
-# Logs & runtime
-# ======================
-logs/
+# Logs
+logs
 *.log
-pids/
+pids
 *.pid
 *.seed
 *.pid.lock
 
-# ======================
-# Build outputs
-# ======================
+# Runtime data
 dist/
 build/
 out/
 .vite/
+
+# Vite / Frontend build
 Frontend/AiLafda/dist/
 
-# ======================
-# Environment variables
-# ======================
+# Env files
 .env
 .env.*
 .env.local
 
-# ======================
-# Firebase / Secrets
-# ======================
+# Firebase
 .firebase/
 .firebaserc
 firebase-debug.*.log
-Backend/src/config/*.json
-secrets.json
-*.json
+Backend/src/config/google-service-account.json
 
-# ======================
 # Coverage
-# ======================
 coverage/
 coverage-final.json
 *.lcov
 
-# ======================
 # OS files
-# ======================
 .DS_Store
 Thumbs.db
 
-# ======================
-# IDEs & editors
-# ======================
+# IDEs and editors
 .vscode/
 .idea/
 *.suo
@@ -65,10 +49,16 @@ Thumbs.db
 *.njsproj
 *.sln
 
-# ======================
-# Temp / backup files
-# ======================
+# Misc
 *.swp
 *.tmp
 *.bak
 *.old
+
+# Security
+secrets.json
+
+# Optional package manager files
+# Uncomment if you use lockfiles you don't want committed
+# package-lock.json
+# yarn.lock
