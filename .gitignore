@@ -62,3 +62,8 @@ secrets.json
 # Uncomment if you use lockfiles you don't want committed
 # package-lock.json
 # yarn.lock
+
+
+# Firebase / Google secrets
+Backend/src/config/*.json
+.env
