@@ -40,7 +40,7 @@ api.post("/api/learning/create-learning-video", payload);
 api.get(`/api/learning/chat/${chatId}`);
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: "https://rapidlearnai-backend.onrender.com",
   withCredentials: true,
   timeout: 120000,
 });
