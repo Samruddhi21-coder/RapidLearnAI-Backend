@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AlertCircle } from 'lucide-react';
 import char1 from '../images/char1.jpg';
 import char2 from '../images/char2.jpg';
 import char3 from '../images/char3.jpg';
@@ -24,7 +25,39 @@ const HomePage = () => {
             >
               Create Your First Video
             </Link>
+
+            {/* Demo Account Card */}
+            <div className="bg-red-50 border-2 border-red-300 rounded-lg p-6 shadow-md mt-8">
+              <div className="flex items-start gap-4">
+                <AlertCircle className="text-red-600 flex-shrink-0 mt-1" size={28} />
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-red-900 mb-2">
+                    Important: Demo Account Required
+                  </h3>
+                  <p className="text-red-800 text-sm mb-4">
+                    Replicate AI credentials are currently unavailable on this website. To view completed results and test the application, please use the demo account below:
+                  </p>
+                  <p className="text-red-800 text-sm mb-4 italic">
+                    Note: Results from production (Render) deployment may differ significantly from local development servers due to environment differences.
+                  </p>
+                  <div className="bg-white rounded-md p-4 border border-red-200 space-y-2">
+                    <div>
+                      <p className="text-xs font-semibold text-gray-600 uppercase">Email</p>
+                      <p className="text-sm text-gray-900 font-mono">samruddhi.shrawagi@gmail.com</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-gray-600 uppercase">Password</p>
+                      <p className="text-sm text-gray-900 font-mono">123456</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-red-700 mt-4 italic">
+                    ✓ This account has been pre-tested with completed video examples after deployment
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="flex justify-center">
             <img 
               src={char1} 
@@ -135,6 +168,56 @@ const HomePage = () => {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Progress Tracking</h3>
               <p className="text-gray-600 text-sm">Monitor your learning journey with detailed analytics and achievement milestones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Sample Videos Section */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-white to-gray-50">
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">See Our AI in Action</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <video 
+              src="https://res.cloudinary.com/dn6hxdzj9/video/upload/v1765974511/rapidlearnai/e9dd9576-518e-459e-ab56-d6a03190d61a/rktppzbf4ypcn8glfng1.mp4"
+              controls
+              className="w-full h-auto bg-gray-900"
+            />
+            <div className="p-4">
+              <p className="text-sm text-gray-600">Sample AI-generated educational video 1</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <video 
+              src="https://res.cloudinary.com/dn6hxdzj9/video/upload/v1765980357/rapidlearnai/2c4264f9-b06c-4cdb-98c9-02c6f64a5dac/d7cibpfs2ohxxv2h5djv.mp4"
+              controls
+              className="w-full h-auto bg-gray-900"
+            />
+            <div className="p-4">
+              <p className="text-sm text-gray-600">Sample AI-generated educational video 2</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <video 
+              src="https://res.cloudinary.com/dn6hxdzj9/video/upload/v1766471700/rapidlearnai/2d260ddc-2420-4f2d-acda-fd2c08d4666c/kgu7ugl4wmtiaczizrge.mp4"
+              controls
+              className="w-full h-auto bg-gray-900"
+            />
+            <div className="p-4">
+              <p className="text-sm text-gray-600">Sample AI-generated educational video 3</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <video 
+              src="https://res.cloudinary.com/dn6hxdzj9/video/upload/v1765956161/rapidlearnai/65c038e7-8ed3-48a1-8cfe-6d359d3eeaa3/poeefpuiynikcdxdo9ls.mp4"
+              controls
+              className="w-full h-auto bg-gray-900"
+            />
+            <div className="p-4">
+              <p className="text-sm text-gray-600">Sample AI-generated educational video 4</p>
             </div>
           </div>
         </div>
